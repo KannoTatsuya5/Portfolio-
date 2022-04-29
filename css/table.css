@@ -1,10 +1,7 @@
 /* 条件選択のレイアウト */
 .select-form {
     width: 800px;
-    margin-top: 500px;
-    margin-left: 320px;
-    margin-right: 400px;
-    margin-bottom: 50px;
+    margin: auto;
 }
 
 .form {
@@ -17,12 +14,11 @@
 }
 
 .form-value {
-    margin-left: 150px;
-    text-align: center;
+    margin-left: 50px;
 }
 
 .form-value select {
-    padding-right: 45px;
+    padding-right: 30px;
 }
 
 /* ピックアップ情報 */
