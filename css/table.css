@@ -1,0 +1,172 @@
+/* 条件選択のレイアウト */
+.select-form {
+    width: 800px;
+    margin-top: 500px;
+    margin-left: 320px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+}
+
+.form {
+    border: 3px solid rgb(181, 177, 177);
+    padding: 20px;
+    margin-top: 380px;
+}
+.select-form .form {
+    display: flex;
+}
+
+.form-value {
+    margin-left: 150px;
+    text-align: center;
+}
+
+.form-value select {
+    padding-right: 45px;
+}
+
+/* ピックアップ情報 */
+.pickup {
+    text-align: center;
+}
+
+.pickup-title {
+    margin: 50px 250px 0 250px;
+    text-align: left;
+    border-top: 2px solid rgba(116, 114, 114, 0.128);
+}
+
+.carousel {
+    width: 70%;
+    margin: 20px 250px;
+    align-items: center;
+    background-color: #d4d4d4b0;
+}
+
+.carousel-img {
+    width: 330px;
+    height: 200px;
+    margin: 30px 15px 0 90px;
+}
+
+.carousel-p {
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+}
+
+/*--スライダーの位置とサイズ調整--*/
+.slider{
+    width:80%;
+    margin:0 auto;
+}
+
+/*--------画像サイズ調整---------*/
+img{ width:100%; }
+
+/*-----------height調整----------*/
+.slick-slide{ height:auto!important; }
+
+/*-----------矢印表示----------*/
+.slick-next{ right:0!important; }
+.slick-prev{ left:0!important; }
+.slick-arrow{ z-index:2!important; }
+
+/* 近隣の土地価格相場、その他の土地価格相場 */
+.main-info {
+    text-align: center;
+}
+.content-title > h3{
+    border-left: 5px solid rgb(82, 121, 82);
+    margin: 50px 250px 30px 250px;
+    text-align: left;
+    color: rgba(116, 114, 114, 0.128);
+    color: rgb(82, 121, 82);
+}
+
+
+
+/* 棒グラフ */
+.another-info {
+    text-align: center;
+}
+
+.content-title h4 {
+    text-align: left;
+    margin: 20px 250px 0 250px;
+    border-top: 2px solid rgba(116, 114, 114, 0.128);
+}
+
+.content-title p {
+    display: inline-block;
+    text-align: left;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(76, 76, 76, 0.739);
+    padding: 5px 15px;
+}
+
+/* 棒グラフ画像背景 */
+.linechart {
+    margin: 30px 220px;
+    border: 2px solid #e6ede0;
+}
+
+.linechart-unit {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-right: 25px;
+}
+
+
+.linechart-base {
+    width: 950px;
+    height: 355px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 7px 23px;
+}
+
+.linechart-datebox-month {
+    display: flex;
+    /* padding: 20px; */
+    margin: 0 110px;
+}
+
+.linechart-month {
+    margin-right: 47px;
+}
+
+.linechart-datebox-year {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.linechart-datebox-year-item {
+    text-align: center;
+}
+
+/* 他の区の閲覧 */
+.repletion {
+    margin-bottom: 50px;
+}
+.repletion p {
+    font-size: 12px;
+    margin: 0 220px;
+}
+
+.feelings {
+    width: 75%;
+    align-items: center;
+    margin: 20px 180px;
+    padding: 20px 30px;
+    border: 2px solid black;
+    background-color: rgba(237, 237, 237, 0.895);
+}
+
+.candidate-area a{
+    color: black;
+    margin-right: 30px;
+}

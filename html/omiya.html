@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>地価調</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/table.css">
+        <link rel="stylesheet" href="../css/omiya.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
+
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    </head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-title"><a href="index.html#home">地価調</a></div>
+        <div class="header-list">
+            <ul>
+                <li><a href="#">会員登録</a></li>
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">閲覧履歴</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <div class="place">地下調 > <a href="index.html#home">home</a> > さいたま市大宮区の土地価格相場</div>
+        <div class="table-contents">
+            <div class="city-title">
+                <h3>さいたま市大宮区(埼玉県)の土地相場価格情報</h3>
+                <p>さいたま市大宮区全体の土地価格相場は、坪単価103.3万円です。</p>
+            </div>
+            <div class="city-head">
+                <h3 class="city-subtitle">さいたま市大宮区の土地価格相場情報</h3>
+                <p class="search-p"><img class="search-image" src="../images/search-image.png" alt="">この市区には条件ごとにいくらの物件があるのか調べてみましょう!</p>
+            </div>
+            <div class="compare">
+                <img class="compare-img" src="../images/house.png" alt="">
+                <p class="compare-sentence">	
+                    欲しい土地を見つけるためには、求める条件の整理が重要です。
+                    このページでは物件の坪単価x条件ごとに表でまとめました。
+                    <br>
+                    条件を追加したり変更したりして、希望に合った土地がどのくらいあるか調べてみましょう。
+                    <br><br>
+                    さいたま市大宮区全体の土地価格相場
+                    <br>
+                    <span class="land-price-market">103.3</span>万円/坪
+                    <br>
+                    低層住居専用地域相場 98万円/坪
+                    <br>
+                    それ以外の住居専用地域 103.8万円/坪 
+                </p>
+            </div>
+        </div>
+        <div class="select-form">
+            <form method="post" class="form">
+                <div class="form-value">
+                    <p>徒歩分数を指定する</p>
+                    <p>
+                        <select name="" class="distance">
+                            <option value="指定なし">指定なし</option>
+                            <option value="3分以内">3分以内</option>
+                            <option value="5分以内">5分以内</option>
+                            <option value="7分以内">7分以内</option>
+                            <option value="10分以内">10分以内</option>
+                            <option value="15分以内">15分以内</option>
+                            <option value="20分以内">20分以内</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="form-value">
+                    <p>建築条件を指定する</p>
+                    <input class="condition" type="radio" name="assignment" value="指定なし" checked>指定なし
+                    <input class="condition" type="radio" name="assignment" value="あり">あり
+                    <input class="condition" type="radio" name="assignment" value="なし">なし    
+                </div>
+            </form>
+            <div>
+            </div>
+        </div>
+        <div class="market-price">
+            <div class="renew-btn">
+                <button class="renew">表を更新する</button>
+            </div>
+            <table class="land-size-price" border="1">
+                <tr>
+                    <th></th>
+                    <th class="rate">~20万円/坪</th>
+                    <th class="rate">20万円/坪~
+                        <br>40万円/坪</th>
+                    <th class="rate">40万円/坪~
+                        <br>60万円/坪</th>
+                    <th class="rate">60万円/坪~
+                        <br>80万円/坪</th>
+                    <th class="rate">80万円/坪~
+                        <br>1000万円/坪</th>
+                    <th class="rate">100万円/坪~
+                        <br>120万円/坪</th>
+                    <th class="rate">120万円/坪~
+                        <br>140万円/坪</th>
+                    <th class="rate">140万円/坪</th>
+                    <th class="rate">価格相場</th>
+                </tr>
+                <tr>
+                    <td class="land-area">140㎡以上</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="land-area">140㎡未満120㎡以上</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="land-area">120㎡未満100㎡以上</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="land-area">100㎡未満800㎡以上</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="land-area">80㎡未満60㎡以上</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="land-area">60㎡未満</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="pickup">
+            <div class="pickup-title">
+                <h3>さいたま市大宮区の物件ピックアップ情報</h3>
+            </div>
+            <section id="carousel-section">
+                <div class="carousel">
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land1.jpeg">
+                      <a href="#"><p class="carousel-p">JR京浜東北線 大宮駅 徒歩15分<br>8600万円<br>実測:150m2</p></a>
+                    </div>
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land2.jpeg">
+                      <a href="#"><p class="carousel-p">東武野田線 北大宮駅 徒歩5分<br>6600万円<br>実測:250.38m2</p></a>
+                    </div>
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land3.jpeg">
+                      <a href="#"><p class="carousel-p">JR京浜東北線 さいたま新都心駅 徒歩12分<br>3500万円<br>実測:100.87m2</p></a>
+                    </div>
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land4.jpeg">
+                      <a href="#"><p class="carousel-p">JR京浜東北線 大宮駅 徒歩16分<br>4480万円<br>100m2(登記)</p></a>
+                    </div>
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land-5.jpeg">
+                      <a href="#"><p class="carousel-p">東武野田線 大宮公園駅 徒歩2分<br>4850万円<br>123.9m2</p></a>
+                    </div>
+                    <div>
+                      <img class="carousel-img" src="../images/landObject/land-6.jpeg">
+                      <a href="#"><p class="carousel-p">JR京浜東北線 大宮駅 徒歩6分<br>5780万円<br>実測:70.74m2</p></a>
+                    </div>
+                  </div>
+            </section>
+
+        </div>
+        <div class="near-info">
+            <div class="content-title">
+                <h3>さいたま市大宮区の近隣の土地価格相場情報</h3>
+            </div>
+            <div class="city-graph">
+                <ul class="graph">
+                    <li>
+                        <p></p>
+                        <div></div>
+                        <p class="city-name city-name-head">市区郡名</p>
+                        <p class="amount amount-head">物件数</p>
+                    </li>
+                    <li>
+                        <p>103.3万円/坪</p>
+                        <div class="bar1"></div>
+                        <p><a class="city-name">さいたま市大宮区</a></p>
+                        <p><a class="amount" href="#">35件</a></p>
+                    </li>
+                    <li>
+                        <p>46.2万円/坪</p>
+                        <div class="bar2"></div>
+                        <p><a class="city-name"  href="minuma.html#minuma">さいたま市見沼区</a></p>
+                        <p><a class="amount" href="#">62件</a></p>
+                    </li>
+                    <li>
+                        <p>44.3万円/坪</p>
+                        <div class="bar3"></div>
+                        <p><a class="city-name" href="nishi.html#nishi">さいたま市西区</a></p>
+                        <p><a class="amount" href="#">65件</a></p>
+                    </li>
+                    <li>
+                        <p>73.6万円/坪</p>
+                        <div class="bar4"></div>
+                        <p><a class="city-name" href="kita.html#kita">さいたま市北区</a></p>
+                        <p><a class="amount" href="#">49件</a></p>
+                    </li>
+                    <li>
+                        <p>93.7万円/坪</p>
+                        <div class="bar5"></div>
+                        <p><a class="city-name" href="minami.html#minami">さいたま市南区</a></p>
+                        <p><a class="amount" href="#">63件</a></p>
+                    </li>
+                    <li>
+                        <p>66.2万円/坪</p>
+                        <div class="bar6"></div>
+                        <p><a class="city-name" href="midori.html#midori">さいたま市緑区</a></p>
+                        <p><a class="amount" href="#">108件</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="another-info">
+            <div class="content-title">
+                <h3>その他の土地価格相場情報</h3>
+                <h4>さいたま市大宮区全体の土地価格相場推移を見る</h4>
+                <br>
+                <p>2022年3月相場の前年比 : 113.9%</p>
+                <p>2022年3月相場の前月比 : 103.2%</p>
+            </div>
+        </div>
+        <div id="js-lineChart" class="linechart">
+            <div class="linechart-unit">（万円 / 坪）</div>
+           <table class="linechart-base">
+            <!-- <tbody> -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            <!-- </tbody> -->
+            </table>
+        <div class="linechart-data">
+            <div class="linechart-date">
+                <ul class="linechart-datebox-month">
+                    <li><div class="linechart-month">3月</div></li>
+                    <li><div class="linechart-month">4月</div></li>
+                    <li><div class="linechart-month">5月</div></li>
+                    <li><div class="linechart-month">6月</div></li>
+                    <li><div class="linechart-month">7月</div></li>
+                    <li><div class="linechart-month">8月</div></li>
+                    <li><div class="linechart-month">9月</div></li>
+                    <li><div class="linechart-month">10月</div></li>
+                    <li><div class="linechart-month">11月</div></li>
+                    <li><div class="linechart-month">12月</div></li>
+                    <li><div class="linechart-month">1月</div></li>
+                    <li><div class="linechart-month">2月</div></li>
+                    <li><div class="linechart-month">3月</div></li>
+                </ul>
+                <div class="linechart-datebox-year">
+                    <div class="linechart-datebox-year-item" style="width: 690px;">
+                        <div class="linechart-year">2021年</div>
+                    </div>
+                    <div class="linechart-datebox-year-item" style="width: 250px;">
+                        <div class="linechart-year">2022年</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="repletion">
+        <p>・表示している相場価格は住居専用以外の用途地域（商業地域や工業地域など）も含めた情報を元に算出しています。</p>
+        <p>・土地の価格は用途地域・古家の有無・前道の幅・土地の形状など様々な要素の影響で変動する可能性があります。</p>
+    </div>
+    <div class="feelings">
+        <div class="feelings-head">
+            埼玉県さいたま市大宮区の土地相場情報はいかがでしたか？
+            さいたま市大宮区(埼玉県)の土地価格相場、坪単価など気になる価格情報もしっかり比較して、夢の住まいづくりの第一歩となる土地探しを楽しんでください。
+            ぜひ一度、近隣の土地価格相場もご覧になってみてください。
+        </div>
+        <div class="candidate-area">
+            <a href="urawa.html#urawa">さいたま市浦和区</a>
+            <a href="kita.html#kita">さいたま市北区</a>
+            <a href="midori.html#midori">さいたま市緑区</a>
+            <a href="minami.html#minami">さいたま市南区</a>
+            <a href="minuma.html#munuma">さいたま市見沼区</a>
+            <br>
+            <a href="nishi.html#nishi">さいたま市西区</a>
+            <a href="omiya.html#omiya">さいたま市大宮区</a>
+            <a href="sakura.html#sakuraku">さいたま市桜区</a>
+            <a href="tyuo.html#tyuo">さいたま市中央区</a>
+            <a href="iwatsuki.html#iwatsuki">さいたま市岩槻区</a>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-title">&copy;chikasira.INC.All Right Reserved.</div>
+        <div class="footer-head">皆様の望む、住宅をーー</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

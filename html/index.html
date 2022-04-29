@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地価調</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-title"><a href="index.html#home">地価調</a></div>
+        <div class="header-list">
+            <ul>
+                <li><a href="#">会員登録</a></li>
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">閲覧履歴</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="place">地下調 > home</div>
+        <div class="landPriceInfo">
+            <div class="main-title">
+                <h3>埼玉県の市区から土地価格相場を探す!</h3>
+                <p>埼玉県の公示地価土地価格相場情報を大公開!気になる市区の土地価格相場を調べて、<br>こんな土地に家を建てたいというあなたのご希望に合う宅地を探してみましょう。</p>
+            </div>
+            <div class="main-head">
+                <h3 class="main-subtitle">埼玉県の土地価格相場情報</h3>
+                <p class="search-p"><img class="search-image" src="../images/search-image.png" alt=""> あなたの条件に合った土地の相場を市区郡ごとに比較してみましょう!</p>
+            </div>
+            <div class="compare">
+                <img class="compare-img" src="../images/image-1.jpeg" alt="">
+                <p class="compare-sentence">
+                    希望する地域の地価<a class="word">(公示価格)<span class="meaning">公示価格とは、国土交通省が発表している土地の価格です。一般の方が土地取引や資産評価をするにあたり、価格の客観的な目安として活用されているもので、毎年1月1日時点における全国のある特定地点のm2単価となります。</span></a>
+                    を調べることで、お探しのエリアの相場観を知ることで物件探しがよりスムーズになります。
+                    <br>この「地下調」では、広さ、駅からのアクセス、建築条件などご希望条件を絞り込んでいきましょう。</p>
+            </div>
+        </div>
+
+        <!-- 条件選択 -->
+        <div class="select-form">
+            <form class="form" method="post">
+                <div class="form-value">
+                    <p>土地面積を指定する</p>
+                    <p>
+                        <select name="" class="landSize">
+                            <option value="指定なし">指定なし</option>
+                            <option value="60㎡未満">60㎡未満</option>
+                            <option value="60㎡~80㎡未満">60㎡~80㎡未満</option>
+                            <option value="80㎡~100㎡未満">80㎡~100㎡未満</option>
+                            <option value="100㎡~120㎡未満">100㎡~120㎡未満</option>
+                            <option value="120㎡~140㎡未満">120㎡~140㎡未満</option>
+                            <option value="140㎡以上">140㎡以上</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="form-value">
+                    <p>駅からの距離を指定する</p>
+                    <p>
+                        <select name="" class="distance">
+                            <option value="指定なし">指定なし</option>
+                            <option value="3分以内">3分以内</option>
+                            <option value="5分以内">5分以内</option>
+                            <option value="7分以内">7分以内</option>
+                            <option value="10分以内">10分以内</option>
+                            <option value="15分以内">15分以内</option>
+                            <option value="20分以内">20分以内</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="form-value">
+                    <p>建築条件を指定する</p>
+                    <input class="condition" type="radio" name="assignment" value="指定なし" checked>指定なし
+                    <input class="condition" type="radio" name="assignment" value="あり">あり
+                    <input class="condition" type="radio" name="assignment" value="なし">なし    
+                </div>
+            </form>
+        </div>
+        <div class="market-price">
+            <div class="renew-btn">
+                <button class="renew">相場情報を更新する</button>
+            </div>
+            <div class="tabelsorter" id="myTable">
+                <table class="market-table" border="1" sortable>
+                        <tr>
+                            <th>市区</th>
+                            <th></th>
+                            <th>土地相場</th>
+                            <th>物件数</th>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="urawa.html#urawa">さいたま市浦和区</a></td>
+                            <td class="price">138.7万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="urawaLand"></div></td>
+                            <td><a href="#">43件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="tyuo.html#tyuo">さいたま市中央区</a></td>
+                            <td class="price">105万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="tyuoLand"></div></td>
+                            <td><a href="#">34件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="omiya.html#omiya">さいたま市大宮区</a></td>
+                            <td class="price">103.3万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="omiyaLand"></div></td>
+                            <td><a href="#">36件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="minami.html#minami">さいたま市南区</a></td>
+                            <td class="price">93.7万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="minamiLand"></div></td>
+                            <td><a href="#">62件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="kita.html#kita">さいたま市北区</a></td>
+                            <td class="price">73.6万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="kitaLand"></div></td>
+                            <td><a href="#">50件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="midori.html#midori">さいたま市緑区</a></td>
+                            <td class="price">66.2万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="midoriLand"></div></td>
+                            <td><a href="#">50件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="sakura.html#sakura">さいたま市桜区</a></td>
+                            <td class="price">57.9万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="sakuraLand"></div></td>
+                            <td><a href="#">50件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="minuma.html#minuma">さいたま市見沼区</a></td>
+                            <td class="price">46.2万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="minumaLand"></div></td>
+                            <td><a href="#">59件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="nishi.html#nishi">さいたま市西区</a></td>
+                            <td class="price">44.3万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="nishiLand"></div></td>
+                            <td><a href="#">69件</a></td>
+                        </tr>
+                        <tr>
+                            <td class="city-name"><a href="iwatsuki.html#iwatsuki">さいたま市岩槻区</a></td>
+                            <td class="price">31.3万円<span class="price-unit">/坪</span></td>
+                            <td class="graph_item"><div class="iwatsukiLand"></div></td>
+                            <td><a href="#">49件</a></td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-title">&copy;chikasira.INC.All Right Reserved.</div>
+        <di class="footer-head">皆様の望む、住宅をーー</div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+
+/* 公示地価の意味の表示 */
+.compare-sentence .word {
+    color: red;
+}
+
+.word {
+    position: relative;
+  }
+  .word:hover {
+      cursor: pointer;
+  }
+
+.meaning {
+    opacity: 0;
+    transition: 0.5s;
+    background: rgb(202, 202, 202);
+    position: absolute;
+    color: black;
+    padding: 5px;
+    width: 400px;
+    bottom: calc(100% + 10px);
+    left:-25%;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 5px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .word::before {
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    border: 7px solid transparent;
+    border-top: 14px solid #000;
+    bottom:12px;
+    left:calc(50% - 7px);
+    margin-top: -3px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .word:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+  .word:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+/* 条件選択のレイアウト */
+.select-form {
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 320px;
+    margin-right: 400px;
+}
+
+.form {
+    border: 3px solid rgb(181, 177, 177);
+    padding: 20px;
+    margin-top: 380px;
+}
+.select-form .form {
+    display: flex;
+}
+
+.form-value {
+    margin-left: 60px;
+    text-align: center;
+}
+
+.form-value select {
+    padding-right: 30px;
+}
+
+
+/* tableレイアウト */
+
+.market-table {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.city-name {
+    width: 20%;
+    padding: 20px 30px;
+}
+
+.city-name > a {
+    color: black;
+}
+
+.city-name > a:hover {
+    color: rgb(158, 135, 135);
+}
+
+.city-name > a:active {
+    color: red;
+}
+
+.city-name > a:visited {
+    color: blue;
+}
+
+.price {
+    width: 13%;
+}
+
+.graph_item {
+    width: 500px;
+}
+
+.urawaLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 420px;
+    height: 30px;
+}
+
+.tyuoLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 360px;
+    height: 30px;
+}
+
+.omiyaLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 350px;
+    height: 30px;
+}
+
+.minamiLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 330px;
+    height: 30px;
+}
+
+.kitaLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 280px;
+    height: 30px;
+}
+
+.midoriLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 250px;
+    height: 30px;
+}
+
+.sakuraLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 220px;
+    height: 30px;
+}
+
+.minumaLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 190px;
+    height: 30px;
+}
+
+.nishiLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 185px;
+    height: 30px;
+}
+
+.iwatsukiLand {
+    background-color: rgba(17, 224, 17, 0.642);
+    width: 150px;
+    height: 30px;
+}
